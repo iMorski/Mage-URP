@@ -26,12 +26,12 @@ public class CharacterMovement : MonoBehaviour
 
     private Vector3 Position;
 
-    public void ChangePosition(Vector2 Direction)
+    public void ChangePosition(Vector3 Direction)
     {
-        if (Direction != new Vector2(0.0f, 0.0f))
+        if (Direction != new Vector3())
         {
             Position = Vector3.Normalize(new Vector3(
-                Direction.x, 0.0f, Direction.y));
+                Direction.x, 0.0f, Direction.z));
 
             SmoothRotation();
             SmoothAnimatorSpeed(1.0f);
@@ -49,8 +49,8 @@ public class CharacterMovement : MonoBehaviour
     
     public void SmoothPosition()
     {
-        if (Position != new Vector3(0.0f, 0.0f, 0.0f)) Position = 
-            Vector3.SmoothDamp(Position, new Vector3(0.0f, 0.0f, 0.0f),
+        if (Position != new Vector3()) Position = 
+            Vector3.SmoothDamp(Position, new Vector3(),
                 ref PositionVelocity, CharacterContainer.Instance.MoveSmoothTime);
     }
 

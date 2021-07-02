@@ -4,16 +4,16 @@ public class UiButtonSphere : UiButton
     {
         PlayerSpherePush SpherePush = PlayerContainer.Instance.PlayerSpherePush;
         
-        SpherePush.SphereOnCollisionEnter += OnPlayerSphereOnCollisionEnter;
-        SpherePush.SphereOnCollisionExit += OnPlayerSphereOnCollisionExit;
+        SpherePush.BallEnter += OnPlayerBallEnter;
+        SpherePush.BallExit += OnPlayerBallExit;
     }
 
-    private void OnPlayerSphereOnCollisionEnter()
+    private void OnPlayerBallEnter()
     {
         Animator.Play("Ui-Sphere-Arrow-In", 1);
     }
     
-    private void OnPlayerSphereOnCollisionExit()
+    private void OnPlayerBallExit()
     {
         Animator.Play("Ui-Sphere-Arrow-Out", 1);
     }

@@ -2,37 +2,14 @@
 
 public class CharacterSpherePush : CharacterSphereCapture
 {
-    private Collider BlockOnSelect;
-    
-    private void FixedUpdate()
+    public void Push(Vector3 Direction)
     {
-        Collider BlockInDistance = null;
-
-        foreach (Collider Block in BlockInSphereCollider)
-        {
-            if (!BlockInDistance ||
-                Vector3.Distance(Block.transform.position, transform.position) <
-                Vector3.Distance(BlockInDistance.transform.position, transform.position))
-            {
-                BlockInDistance = Block;
-            }
-        }
-
-        if (!BlockInDistance) BlockOnSelect = null;
-        else if (BlockInDistance != BlockOnSelect) BlockOnSelect = BlockInDistance;
-    }
-    
-    public void Push(Vector2 Direction)
-    {
-        if (!BlockOnSelect) return;
+        if (!Ball) return;
         
-        Rigidbody Rigidbody = BlockOnSelect.GetComponent<Rigidbody>();
-        Coroutine Coroutine = BlockInSphereCoroutine[
-            BlockInSphereCollider.IndexOf(BlockOnSelect)];
+        if (BallCoroutine != null) StopCoroutine(BallCoroutine);
         
-        if (Coroutine != null) StopCoroutine(Coroutine);
-        
-        Rigidbody.AddForce(new Vector3(Direction.x, 0.0f,
-            Direction.y) * CharacterContainer.Instance.SpherePushForce);
+        Rigidbody Rigidbody = Ball.GetComponent<Rigidbody>();
+        Rigidbody.AddForce(Vector3.Normalize(new Vector3(Direction.x, 0.0f,
+            Direction.z)) * CharacterContainer.Instance.SpherePushForce);
     }
 }

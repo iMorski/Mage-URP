@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class PlayerMovement : CharacterMovement
 {private void Start()
     {
@@ -9,6 +11,10 @@ public class PlayerMovement : CharacterMovement
 
     private void OnCastBegin() { ChangeState(); }
     private void OnCastFinish() { ChangeState(); }
-    
-    private void FixedUpdate() { ChangePosition(PlayerContainer.Instance.Joystick.Direction); }
+
+    private void FixedUpdate()
+    {
+        ChangePosition(new Vector3(PlayerContainer.Instance.Joystick.Direction.x, 0.0f,
+            PlayerContainer.Instance.Joystick.Direction.y));
+    }
 }

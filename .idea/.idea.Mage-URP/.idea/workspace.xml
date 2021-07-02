@@ -9,6 +9,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiButtonSphere.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSphere.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSpherePush.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -24,7 +28,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MyCharacterSphere.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MyCharacterContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MySphere.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpherePush.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/ЬнMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MyMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MySpherePush.cs" />
@@ -33,15 +36,21 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MyContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphereCapture.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphere.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPower.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSphere.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiBarPower.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiButtonSphere.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSphere.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphereCapture.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSpherePush.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpherePush.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSpherePush.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1uefHRawd6DNMCj9koVLiyupwsk" />

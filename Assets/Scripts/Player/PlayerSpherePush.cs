@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class PlayerSpherePush : CharacterSpherePush
 {
-    public delegate void OnSphereOnCollisionEnter();
-    public event OnSphereOnCollisionEnter SphereOnCollisionEnter;
+    public delegate void OnBallEnter();
+    public event OnBallEnter BallEnter;
     
-    public delegate void OnSphereOnCollisionExit();
-    public event OnSphereOnCollisionExit SphereOnCollisionExit;
+    public delegate void OnBallExit();
+    public event OnBallExit BallExit;
     
     private void Start()
     {
@@ -17,21 +17,18 @@ public class PlayerSpherePush : CharacterSpherePush
     {
         base.OnTriggerEnter(Other);
 
-        if (Other.CompareTag("Sphere"))
-        {
-            SphereOnCollisionEnter?.Invoke();
-        }
+        if (Other.CompareTag("Ball")) BallEnter?.Invoke();
     }
 
     public override void OnTriggerExit(Collider Other)
     {
-        base.OnTriggerEnter(Other);
+        base.OnTriggerExit(Other);
         
-        if (Other.CompareTag("Sphere"))
-        {
-            SphereOnCollisionExit?.Invoke();
-        }
+        if (Other.CompareTag("Ball")) BallExit?.Invoke();
     }
 
-    private void OnSwipeByRelease(Vector2 Direction) { Push(Direction); }
+    private void OnSwipeByRelease(Vector2 Direction)
+    {
+        Push(new Vector3(Direction.x, 0.0f, Direction.y));
+    }
 }
