@@ -12,7 +12,8 @@ public class CharacterContainer : MonoBehaviour
 
     public float SphereCaptureRiseDistance;
     public float SphereCaptureRiseForce;
-    public float SphereCaptureRiseDuration;
+    //public float SphereCaptureRiseDuration;
+    
     public float SphereCaptureTime;
 
     public float SpherePushForce;

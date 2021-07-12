@@ -8,11 +8,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiButtonSphere.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSphere.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSpherePush.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiButtonSphere.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSphere.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ball/BallContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerArea.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -34,7 +36,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MyContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphere.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPower.cs" />
@@ -42,15 +43,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiBarPower.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiButtonSphere.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UiCamera.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSphere.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphereCapture.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSpherePush.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerSpherePush.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSpherePush.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ball/BallContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OnForceColor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BallColorOnForce.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerArea.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphereCapture.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSpherePush.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1uefHRawd6DNMCj9koVLiyupwsk" />
@@ -62,6 +68,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">

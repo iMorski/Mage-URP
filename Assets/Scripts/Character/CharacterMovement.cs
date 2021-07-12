@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
     [NonSerialized] public Rigidbody Rigidbody;
     [NonSerialized] public Animator Animator;
     
-    private void Awake()
+    public virtual void Awake()
     {
         Rigidbody = GetComponent<Rigidbody>();
         Animator = GetComponent<Animator>();

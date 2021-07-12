@@ -5,7 +5,6 @@ public class CharacterSpherePush : CharacterSphereCapture
     public void Push(Vector3 Direction)
     {
         if (!Ball) return;
-        
         if (BallCoroutine != null) StopCoroutine(BallCoroutine);
         
         Rigidbody Rigidbody = Ball.GetComponent<Rigidbody>();

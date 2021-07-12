@@ -1,10 +1,20 @@
 using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ComputerMovement : CharacterMovement
 {
     private bool OnWait;
     private bool OnWaitCoroutine;
+
+    private ComputerArea Area;
+
+    public override void Awake()
+    {
+        base.Awake();
+        
+        Area = GetComponentInParent<ComputerArea>();
+    }
     
     private void FixedUpdate()
     {
@@ -16,7 +26,7 @@ public class ComputerMovement : CharacterMovement
 
         Vector3 Direction = new Vector3();
 
-        if (DistanceToBall > DistanceToStop)
+        if (Area.BallIn && DistanceToBall > DistanceToStop)
         {
             if (OnWait && !OnWaitCoroutine)
             {
