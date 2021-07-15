@@ -7,6 +7,7 @@ public class BallContainer : MonoBehaviour
     public float BallSpeedStep01;
     public float BallSpeedStep02;
     public float BallSpeedStep03;
+    
     public Color BallColorStep01;
     public Color BallColorStep02;
     public Color BallColorStep03;

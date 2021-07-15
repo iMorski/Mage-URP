@@ -34,11 +34,14 @@ public class CharacterSphereCapture : MonoBehaviour
     private IEnumerator Capture(Rigidbody Rigidbody)
     {
         Vector3 Velocity = new Vector3();
-
+        
         while (BallInMotion(Rigidbody))
         {
+            float CaptureTime = CharacterContainer.Instance.SphereCaptureTime;
+            float CaptureTimeOnForce = CaptureTime * (Rigidbody.velocity.magnitude / 100);
+            
             Rigidbody.velocity = Vector3.SmoothDamp(Rigidbody.velocity, new Vector3(),
-                ref Velocity, CharacterContainer.Instance.SphereCaptureTime);
+                ref Velocity, CaptureTimeOnForce);
             
             yield return new WaitForFixedUpdate();
         }

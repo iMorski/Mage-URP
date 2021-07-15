@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ball
-  - Computer
+  - Computer [E]
+  - Computer [F]
   layers:
   - Default
   - TransparentFX
