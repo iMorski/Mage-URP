@@ -1,21 +1,25 @@
 using System;
-using System.Collections;
 using UnityEngine;
 
 public class CharacterSphereCapture : MonoBehaviour
 {
     [NonSerialized] public Collider Ball;
-    [NonSerialized] public Coroutine BallCoroutine;
         
     public virtual void OnTriggerEnter(Collider Other)
     {
         if (Other.CompareTag("Ball"))
         {
-            Rigidbody Rigidbody = Other.GetComponent<Rigidbody>();
-            Rigidbody.useGravity = false;
-
             Ball = Other;
-            BallCoroutine = StartCoroutine(Capture(Rigidbody));
+            
+            BallCapture BallCapture = Ball.GetComponent<BallCapture>();
+            BallCapture.CaptureCount = BallCapture.CaptureCount + 1;
+            
+            if (BallCapture.CaptureCount > 1) return;
+
+            Rigidbody Rigidbody = Ball.GetComponent<Rigidbody>();
+            Rigidbody.useGravity = false;
+            
+            BallCapture.CaptureCoroutine = StartCoroutine(BallCapture.Capture(Rigidbody));
         }
     }
     
@@ -23,32 +27,24 @@ public class CharacterSphereCapture : MonoBehaviour
     {
         if (Other.CompareTag("Ball"))
         {
-            Rigidbody Rigidbody = Other.GetComponent<Rigidbody>();
-            Rigidbody.useGravity = true;
-
+            if (!Ball) return;
+            
+            Release();
+            
             Ball = null;
-            if (BallCoroutine != null) StopCoroutine(BallCoroutine);
         }
     }
-    
-    private IEnumerator Capture(Rigidbody Rigidbody)
+
+    public void Release()
     {
-        Vector3 Velocity = new Vector3();
+        BallCapture BallCapture = Ball.GetComponent<BallCapture>();
+        BallCapture.CaptureCount = BallCapture.CaptureCount - 1;
         
-        while (BallInMotion(Rigidbody))
-        {
-            float CaptureTime = CharacterContainer.Instance.SphereCaptureTime;
-            float CaptureTimeOnForce = CaptureTime * (Rigidbody.velocity.magnitude / 100);
+        if (BallCapture.CaptureCount > 0) return;
             
-            Rigidbody.velocity = Vector3.SmoothDamp(Rigidbody.velocity, new Vector3(),
-                ref Velocity, CaptureTimeOnForce);
+        Rigidbody Rigidbody = Ball.GetComponent<Rigidbody>();
+        Rigidbody.useGravity = true;
             
-            yield return new WaitForFixedUpdate();
-        }
-    }
-    
-    private bool BallInMotion(Rigidbody Rigidbody)
-    {
-        return Rigidbody.velocity != new Vector3();
+        if (BallCapture.CaptureCoroutine != null) StopCoroutine(BallCapture.CaptureCoroutine);
     }
 }

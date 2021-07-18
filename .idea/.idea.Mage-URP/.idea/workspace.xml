@@ -9,14 +9,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSpherePush.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ball/BallOnForce.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerCircle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ball/BallCapture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UiButtonSphere.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerBallCheck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSphere.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ball/BallContainer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -51,11 +50,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/OnForceColor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BallColorOnForce.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerArea.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ball/BallForce.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ball/BallColorOnForce.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ball/BallContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphereCapture.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerCircle.cs" />
@@ -68,7 +65,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Computer/ComputerSpherePush.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ball/BallOnForce.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ball/BallOnCapture.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSphereCapture.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterSpherePush.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ball/BallCapture.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1uefHRawd6DNMCj9koVLiyupwsk" />

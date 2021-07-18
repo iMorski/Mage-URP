@@ -900,7 +900,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.00001
+  m_Radius: 5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &56928774
 Transform:
@@ -28374,7 +28374,6 @@ GameObject:
   - component: {fileID: 7887806512426749221}
   - component: {fileID: 7887806512426749210}
   - component: {fileID: 7887806512426749220}
-  - component: {fileID: 7887806512426749211}
   m_Layer: 0
   m_Name: Container
   m_TagString: Untagged
@@ -28401,26 +28400,6 @@ MonoBehaviour:
   WaitTimeMax: 0.55
   CircleColorE: {r: 0.6666667, g: 0, b: 0, a: 0.6666667}
   CircleColorF: {r: 0, g: 0.6666667, b: 0, a: 0.6666667}
---- !u!114 &7887806512426749211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7887806512426749209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f2640ebda5a241d29591c063508406f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BallSpeedStep01: 10
-  BallSpeedStep02: 15
-  BallSpeedStep03: 20
-  BallColorStep01: {r: 0.6666667, g: 0.6666667, b: 0.6666667, a: 1}
-  BallColorStep02: {r: 1, g: 1, b: 0, a: 1}
-  BallColorStep03: {r: 1, g: 0.49019608, b: 0, a: 1}
-  BallColorStep04: {r: 1, g: 0, b: 0, a: 1}
-  BallColorChangeStep: 0.05
 --- !u!114 &7887806512426749220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28478,9 +28457,9 @@ MonoBehaviour:
   MoveSmoothTime: 0.05
   SphereRadius: 5
   SphereTime: 0.075
-  SphereCaptureRiseDistance: 0.75
-  SphereCaptureRiseForce: 10
-  SphereCaptureTime: 1
+  SphereCaptureRiseDistance: 1
+  SphereCaptureRiseDuration: 0.5
+  SphereCaptureTime: 0.05
   SpherePushForce: 1500
 --- !u!4 &7887806512426749223
 Transform:
@@ -28823,10 +28802,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8778688689147421494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d18689b7ea5b482ba43c20ad1ef915d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d5051439efbc4f9295685f5691780ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MeshRenderer: {fileID: 0}
 --- !u!4 &8781982872607937986
 Transform:
   m_ObjectHideFlags: 0
