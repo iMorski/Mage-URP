@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class ComputerBallCheck : MonoBehaviour
+public class ComputerOuterCheck : MonoBehaviour
 {
     [NonSerialized] public bool Ball;
 

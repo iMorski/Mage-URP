@@ -10,11 +10,6 @@ public class CharacterContainer : MonoBehaviour
     public float SphereRadius;
     public float SphereTime;
 
-    public float SphereCaptureRiseDistance;
-    public float SphereCaptureRiseDuration;
-    
-    public float SphereCaptureTime;
-
     public float SpherePushForce;
 
     private void Awake()
